@@ -1,5 +1,7 @@
 # Idris Kaye — Portfolio Zine
 
+live URL: https://muhammadowais19.github.io/Idris-Kaye/
+
 A one-screen portfolio site built as a **3D fashion zine** on a pure black background.
 The book sits closed, opens its cover, turns through five spreads of work, rests on the last
 spread, then riffles shut and starts again — the same loop as the reference video.
