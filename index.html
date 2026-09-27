@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idris Kaye — Portfolio</title>
+  <meta name="description" content="Idris Kaye, designer and developer. Selected work, bound as a zine.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- start downloading the 3D library early -->
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="book" aria-label="A zine of selected work, pages turning"></canvas>
+
+  <!-- top left -->
+  <div class="ui tl">
+    <a href="#" data-go="0">Idris Kaye</a>
+    <span class="dim">Designer &amp; Developer</span>
+  </div>
+
+  <!-- top right -->
+  <nav class="ui tr" aria-label="Primary">
+    <a href="#" data-go="1">Work</a>
+    <a href="#" data-panel="about">About</a>
+    <a href="#" data-panel="contact">Contact</a>
+  </nav>
+
+  <!-- bottom left: title of the open spread -->
+  <div class="ui bl">
+    <div class="cap" aria-live="polite"><span id="cap">Cover</span></div>
+    <span class="dim" id="sub"></span>
+  </div>
+
+  <!-- bottom right: one bar per spread + play/pause -->
+  <div class="ui br">
+    <div class="bars" id="bars"></div>
+    <button id="play" aria-pressed="true">Pause</button>
+  </div>
+
+  <!-- about overlay -->
+  <section class="panel" id="about" aria-label="About">
+    <div>
+      <p>I design and build websites, identities and the odd interactive toy — mostly for fashion, music and culture.</p>
+      <p class="dim">Lahore / Remote · Available Nov ’26</p>
+    </div>
+  </section>
+
+  <!-- contact overlay -->
+  <section class="panel" id="contact" aria-label="Contact">
+    <div>
+      <p><a href="mailto:hello@idriskaye.studio">hello@idriskaye.studio</a></p>
+      <p class="dim"><a href="#">Instagram</a> &nbsp; <a href="#">GitHub</a> &nbsp; <a href="#">Read.cv</a></p>
+    </div>
+  </section>
+
+  <script src="pages.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
